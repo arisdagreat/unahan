@@ -11,7 +11,7 @@ pipeline {
            ).trim()
             }
             echo "${env.COMMIT}"
-            echo $workspace
+            echo "$workspace"
 
             script {
                         env.pwd = sh (
