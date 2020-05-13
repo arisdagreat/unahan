@@ -10,7 +10,7 @@ pipeline {
             returnStdout: true
            ).trim()
             }
-            echo ${env.COMMIT}
+            echo "${env.COMMIT}"
             }
         }
     }
