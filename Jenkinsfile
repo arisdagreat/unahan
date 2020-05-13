@@ -6,7 +6,7 @@ pipeline {
             echo "puta"
             script {
 			env.COMMIT = sh (
-            script: 'cd $workspace && git rev-list HEAD | wc -l',
+            script: `git rev-list HEAD | wc -l`,
             returnStdout: true
            ).trim()
             }
