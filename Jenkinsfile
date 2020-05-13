@@ -13,15 +13,6 @@ pipeline {
             echo "${env.COMMIT}"
             echo "$workspace"
 
-            script {
-                        env.pwd = sh (
-            script: 'pwd',
-            returnStdout: true
-           ).trim()
-            }
-            echo "${env.pwd}"
-
-
 
             }
         }
