@@ -11,6 +11,17 @@ pipeline {
            ).trim()
             }
             echo "${env.COMMIT}"
+
+            script {
+                        env.pwd = sh (
+            script: 'pwd',
+            returnStdout: true
+           ).trim()
+            }
+            echo "${env.pwd}"
+
+
+
             }
         }
     }
