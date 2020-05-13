@@ -7,8 +7,7 @@ pipeline {
             script {
 			env.COMMIT = sh (
             git rev-list HEAD | wc -l
-            )
-#           ).trim()
+           ).trim()
             echo ${env.COMMIT}
             }
         }
