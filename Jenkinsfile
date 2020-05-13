@@ -9,6 +9,7 @@ pipeline {
             script: 'cd $workspace && git rev-list HEAD | wc -l',
             returnStdout: true
            ).trim()
+            }
             echo ${env.COMMIT}
             }
         }
